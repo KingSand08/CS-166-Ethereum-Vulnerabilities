@@ -21,9 +21,9 @@
 				"name": "balances",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -34,9 +34,9 @@
 				"name": "totalSupply",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -50,9 +50,9 @@
 						"type": "address"
 					},
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "_value",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"name": "transfer",
@@ -80,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/VulnerableToken.sol": "VulnerableToken"
+			"contracts/SmallVulnToken.sol": "SmallVulnToken"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -94,12 +94,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/VulnerableToken.sol": {
-			"keccak256": "0xeb5be80d99f62ac1cc33e482db7075cf02055be4839d1f3658f11c122676edf3",
+		"contracts/SmallVulnToken.sol": {
+			"keccak256": "0x1fb1ccd91ac57fb177e2fd0132575817f5028f70593be610c277123b6aa8d210",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://33f937bcd43b28ff31900e23b560025a20fcf0cc8aa6373dce1b8c5f532a8f57",
-				"dweb:/ipfs/QmamGsucE4DoBFovSzzbjCWbr4eArcGcKyXeqq1hzxrrkV"
+				"bzz-raw://5e831da23bd7d3cff6c7f9871723f248321e779cf004e8d1eac5caf7e6830559",
+				"dweb:/ipfs/QmXLGfB7maN4SV1bjxoVZmQGLwBrQTomHuYBi6kdg1LKBC"
 			]
 		}
 	},

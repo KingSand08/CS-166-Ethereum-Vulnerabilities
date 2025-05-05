@@ -6,64 +6,34 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_vulnerableTokenAddress",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balances",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"inputs": [],
+				"name": "exploitOverflow",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "totalSupply",
+				"name": "vulnerableToken",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "contract VulnerableToken",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "transfer",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "success",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -80,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/VulnerableToken.sol": "VulnerableToken"
+			"contracts/AttackOverflow.sol": "AttackOverflow"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -94,6 +64,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"contracts/AttackOverflow.sol": {
+			"keccak256": "0x30efed931d8316e8f16279d632a52647bb29d38f2e8ccdf2b37cc9a56b4ee847",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c5715da20ae05073abd24f548bf61e46897dec247bc3cefc4eac6bc9da1c6d80",
+				"dweb:/ipfs/QmPELzoqF3Lgw7rjJd7y4r5mz24ChrJ85LnCbMf8JJhZGx"
+			]
+		},
 		"contracts/VulnerableToken.sol": {
 			"keccak256": "0xeb5be80d99f62ac1cc33e482db7075cf02055be4839d1f3658f11c122676edf3",
 			"license": "MIT",

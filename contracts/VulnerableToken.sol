@@ -10,8 +10,6 @@ contract VulnerableToken {
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
-        // require(balances[msg.sender] >= _value, "Insufficient balance");
-
         balances[msg.sender] -= _value; // ⚡ Now unsafe: Underflow possible
         balances[_to] += _value;         // ⚡ Overflow possible
         return true;
