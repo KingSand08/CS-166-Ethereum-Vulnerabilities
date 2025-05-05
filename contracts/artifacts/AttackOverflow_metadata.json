@@ -50,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/AttackOverflow.sol": "AttackOverflow"
+			"contracts/Attack.sol": "AttackOverflow"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -64,20 +64,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/AttackOverflow.sol": {
-			"keccak256": "0x30efed931d8316e8f16279d632a52647bb29d38f2e8ccdf2b37cc9a56b4ee847",
+		"contracts/Attack.sol": {
+			"keccak256": "0x69c47f52648fc316e3780add52eb4529a5b520618a0ea68a190a9a83cf61815d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c5715da20ae05073abd24f548bf61e46897dec247bc3cefc4eac6bc9da1c6d80",
-				"dweb:/ipfs/QmPELzoqF3Lgw7rjJd7y4r5mz24ChrJ85LnCbMf8JJhZGx"
+				"bzz-raw://f3eccbead16f5f5cefa0d8bb6c6fa5d20ffd0774493b5fb233073a790a9c7483",
+				"dweb:/ipfs/QmUdURJR9CtW4BYyng5dqj2jBkU6mSwL7KzKMqPmuRUTKd"
 			]
 		},
 		"contracts/VulnerableToken.sol": {
-			"keccak256": "0xeb5be80d99f62ac1cc33e482db7075cf02055be4839d1f3658f11c122676edf3",
+			"keccak256": "0x18ab9489f54d47cc132d18094d032cb5c15697f081ba2df197d62210de313046",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://33f937bcd43b28ff31900e23b560025a20fcf0cc8aa6373dce1b8c5f532a8f57",
-				"dweb:/ipfs/QmamGsucE4DoBFovSzzbjCWbr4eArcGcKyXeqq1hzxrrkV"
+				"bzz-raw://a2c6ce03b0bae76962298986ab1de95c382ed295df66f04b3d745b4d5cbf3415",
+				"dweb:/ipfs/Qmcox9wwj8VFsiAHqsn23AnMfETuWQCQZWKfUfr5bBENrC"
 			]
 		}
 	},

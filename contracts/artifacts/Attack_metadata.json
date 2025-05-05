@@ -65,19 +65,19 @@
 	},
 	"sources": {
 		"contracts/Attack.sol": {
-			"keccak256": "0x568f9191bb0f47eac3e3f57df5768dcc4efa65ed71f9f13e6a93f6a3dae87008",
+			"keccak256": "0x4377606fdd8f78ac62b951d59d36ad25598fc92d23dcc9a683ab246dea4c0aad",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://426319f4e53bf4c1c0d5f5682ae1c779f34c3a9379425e7b92d574d0d914bf54",
-				"dweb:/ipfs/QmZHoPRtMqw99je8cFb6Zk31PvQUwXa19pdKXfU1xPC9U5"
+				"bzz-raw://68a944b49241b077efcee7f129ebebc1567b5247f025ee416e02e02ce4126d50",
+				"dweb:/ipfs/Qmewqeidu7mRsgYMikg5NYEWDJrFU6rGX9b8GGyj9jS7Md"
 			]
 		},
 		"contracts/VulnerableToken.sol": {
-			"keccak256": "0xeb5be80d99f62ac1cc33e482db7075cf02055be4839d1f3658f11c122676edf3",
+			"keccak256": "0x18ab9489f54d47cc132d18094d032cb5c15697f081ba2df197d62210de313046",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://33f937bcd43b28ff31900e23b560025a20fcf0cc8aa6373dce1b8c5f532a8f57",
-				"dweb:/ipfs/QmamGsucE4DoBFovSzzbjCWbr4eArcGcKyXeqq1hzxrrkV"
+				"bzz-raw://a2c6ce03b0bae76962298986ab1de95c382ed295df66f04b3d745b4d5cbf3415",
+				"dweb:/ipfs/Qmcox9wwj8VFsiAHqsn23AnMfETuWQCQZWKfUfr5bBENrC"
 			]
 		}
 	},

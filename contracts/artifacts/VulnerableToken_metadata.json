@@ -95,11 +95,11 @@
 	},
 	"sources": {
 		"contracts/VulnerableToken.sol": {
-			"keccak256": "0xeb5be80d99f62ac1cc33e482db7075cf02055be4839d1f3658f11c122676edf3",
+			"keccak256": "0x18ab9489f54d47cc132d18094d032cb5c15697f081ba2df197d62210de313046",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://33f937bcd43b28ff31900e23b560025a20fcf0cc8aa6373dce1b8c5f532a8f57",
-				"dweb:/ipfs/QmamGsucE4DoBFovSzzbjCWbr4eArcGcKyXeqq1hzxrrkV"
+				"bzz-raw://a2c6ce03b0bae76962298986ab1de95c382ed295df66f04b3d745b4d5cbf3415",
+				"dweb:/ipfs/Qmcox9wwj8VFsiAHqsn23AnMfETuWQCQZWKfUfr5bBENrC"
 			]
 		}
 	},
