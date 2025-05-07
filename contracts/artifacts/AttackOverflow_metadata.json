@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.7.0+commit.9e61f92b"
+		"version": "0.7.6+commit.7338295f"
 	},
 	"language": "Solidity",
 	"output": {
@@ -65,19 +65,19 @@
 	},
 	"sources": {
 		"contracts/AttackOverflow.sol": {
-			"keccak256": "0x30efed931d8316e8f16279d632a52647bb29d38f2e8ccdf2b37cc9a56b4ee847",
+			"keccak256": "0x53cfdeb81fc5ac5414e69937d162d7843172450560973b5230b7df8f636d2274",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c5715da20ae05073abd24f548bf61e46897dec247bc3cefc4eac6bc9da1c6d80",
-				"dweb:/ipfs/QmPELzoqF3Lgw7rjJd7y4r5mz24ChrJ85LnCbMf8JJhZGx"
+				"bzz-raw://0ee17484ac3103f4d0a272f41e80653e41dd274bbade90b062a1399e169ced20",
+				"dweb:/ipfs/QmSvuqtvKdU2xHWVUD9riDUChfio5Q6BevwTUhLnhvkGbj"
 			]
 		},
 		"contracts/VulnerableToken.sol": {
-			"keccak256": "0xeb5be80d99f62ac1cc33e482db7075cf02055be4839d1f3658f11c122676edf3",
+			"keccak256": "0x9ed6b1841784dce2bec1334bc13523bab44f056b2e3a505f940e2c8732659d28",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://33f937bcd43b28ff31900e23b560025a20fcf0cc8aa6373dce1b8c5f532a8f57",
-				"dweb:/ipfs/QmamGsucE4DoBFovSzzbjCWbr4eArcGcKyXeqq1hzxrrkV"
+				"bzz-raw://1eaa5059ad0b700648590a3362b050bba43551a531bd705bd39a5a39ea4f7121",
+				"dweb:/ipfs/QmVfyTw4KjYPpPJMxL1uN3RK4xfRUrMncM8kdHRvsHaanx"
 			]
 		}
 	},

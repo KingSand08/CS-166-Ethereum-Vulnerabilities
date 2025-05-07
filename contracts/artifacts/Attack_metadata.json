@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.7.0+commit.9e61f92b"
+		"version": "0.7.6+commit.7338295f"
 	},
 	"language": "Solidity",
 	"output": {
@@ -65,19 +65,19 @@
 	},
 	"sources": {
 		"contracts/Attack.sol": {
-			"keccak256": "0x568f9191bb0f47eac3e3f57df5768dcc4efa65ed71f9f13e6a93f6a3dae87008",
+			"keccak256": "0x4d92daac02970fd2347fe20465c8aeb1a41c86b2f960ad9890188b66c69ad3a3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://426319f4e53bf4c1c0d5f5682ae1c779f34c3a9379425e7b92d574d0d914bf54",
-				"dweb:/ipfs/QmZHoPRtMqw99je8cFb6Zk31PvQUwXa19pdKXfU1xPC9U5"
+				"bzz-raw://6977b93428bdd04a336e4d8e38fbd3e026f12f7e4f9135d7d79e2da2e522618f",
+				"dweb:/ipfs/QmavLyKAp23HQSqEAQWxVTAhJJA6XFzSXgf5vg1XeYVGwH"
 			]
 		},
 		"contracts/VulnerableToken.sol": {
-			"keccak256": "0xeb5be80d99f62ac1cc33e482db7075cf02055be4839d1f3658f11c122676edf3",
+			"keccak256": "0xb13ba32814b6ec5a79bd6fd891ee1acf3e6351c3f5473b16ddfc8e33ad818f03",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://33f937bcd43b28ff31900e23b560025a20fcf0cc8aa6373dce1b8c5f532a8f57",
-				"dweb:/ipfs/QmamGsucE4DoBFovSzzbjCWbr4eArcGcKyXeqq1hzxrrkV"
+				"bzz-raw://ac9113af1c5822f16faca86f4621d5b8b8f73e1079f12cb1a77e0ee7918274c0",
+				"dweb:/ipfs/QmSamxNKgkuCfJPQmGu5BeVuWTkWRKEg98aK4SrUbS8CtM"
 			]
 		}
 	},

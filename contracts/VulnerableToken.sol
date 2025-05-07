@@ -6,7 +6,7 @@ contract VulnerableToken {
     uint256 public totalSupply = 2**256 - 1; // Maximum uint256 value
 
     constructor() {
-        balances[msg.sender] = totalSupply;
+        balances[msg.sender] = totalSupply; 
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
