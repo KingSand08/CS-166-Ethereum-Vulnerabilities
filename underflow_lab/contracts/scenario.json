@@ -1,0 +1,514 @@
+{
+  "accounts": {
+    "account{0}": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+    "account{1}": "0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2",
+    "account{2}": "0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db",
+    "account{3}": "0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB"
+  },
+  "linkReferences": {},
+  "transactions": [
+    {
+      "timestamp": 1746355252356,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "contractName": "VulnerableToken",
+        "bytecode": "60806040527fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff60015534801561003457600080fd5b506001546000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506102cc806100896000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806318160ddd1461004657806327e235e314610064578063a9059cbb146100bc575b600080fd5b61004e610120565b6040518082815260200191505060405180910390f35b6100a66004803603602081101561007a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610126565b6040518082815260200191505060405180910390f35b610108600480360360408110156100d257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019092919050505061013e565b60405180821515815260200191505060405180910390f35b60015481565b60006020528060005260406000206000915090505481565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156101f4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260148152602001807f496e73756666696369656e742062616c616e636500000000000000000000000081525060200191505060405180910390fd5b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550600190509291505056fea2646970667358221220767989fef15555e1e041039f1b226cc0b91608f74c2155b0604ca34f3e491bda64736f6c63430007060033",
+        "linkReferences": {},
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1746356523062,
+      "record": {
+        "value": "0",
+        "inputs": "(address)",
+        "parameters": [
+          "created{1746355252356}"
+        ],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "contractName": "Attack",
+        "bytecode": "608060405234801561001057600080fd5b506040516102373803806102378339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101a3806100946000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806330c78fa81461003b5780635b57098a1461006f575b600080fd5b610043610079565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61007761009d565b005b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb3360016040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561012f57600080fd5b505af1158015610143573d6000803e3d6000fd5b505050506040513d602081101561015957600080fd5b81019080805190602001909291905050505056fea2646970667358221220f402078699d4ba6e135c25fd123b6d48817cbd5512f3d910bf40c8c7108f6d5964736f6c63430007000033",
+        "linkReferences": {},
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746356581682,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "created{1746356523062}",
+          "1"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746355252356}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1746356615902,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "exploitUnderflow",
+        "type": "function",
+        "to": "created{1746356523062}",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746357044751,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "exploitUnderflow",
+        "type": "function",
+        "to": "created{1746356523062}",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1746357059167,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "exploitUnderflow",
+        "type": "function",
+        "to": "created{1746356523062}",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746357073811,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+          "1"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746355252356}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746357087080,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "exploitUnderflow",
+        "type": "function",
+        "to": "created{1746356523062}",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746357151647,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2",
+          "1"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746355252356}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746357159560,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "created{1746356523062}",
+          "1"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746355252356}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746357200864,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "created{1746356523062}",
+          "1"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746355252356}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1746357215534,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "exploitUnderflow",
+        "type": "function",
+        "to": "created{1746356523062}",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746357417687,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "contractName": "VulnerableToken",
+        "bytecode": "60806040527fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff60015534801561003457600080fd5b506001546000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506102cc806100896000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806318160ddd1461004657806327e235e314610064578063a9059cbb146100bc575b600080fd5b61004e610120565b6040518082815260200191505060405180910390f35b6100a66004803603602081101561007a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610126565b6040518082815260200191505060405180910390f35b610108600480360360408110156100d257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019092919050505061013e565b60405180821515815260200191505060405180910390f35b60015481565b60006020528060005260406000206000915090505481565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156101f4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260148152602001807f496e73756666696369656e742062616c616e636500000000000000000000000081525060200191505060405180910390fd5b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550600190509291505056fea2646970667358221220b3cf191a14493d42043a95b2c973fdc642569309e63f55c5014eea0802b8086064736f6c63430007000033",
+        "linkReferences": {},
+        "from": "account{2}"
+      }
+    },
+    {
+      "timestamp": 1746357428731,
+      "record": {
+        "value": "0",
+        "inputs": "(address)",
+        "parameters": [
+          "created{1746357417687}"
+        ],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "contractName": "Attack",
+        "bytecode": "608060405234801561001057600080fd5b506040516102373803806102378339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101a3806100946000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806330c78fa81461003b5780635b57098a1461006f575b600080fd5b610043610079565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61007761009d565b005b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb3360026040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561012f57600080fd5b505af1158015610143573d6000803e3d6000fd5b505050506040513d602081101561015957600080fd5b81019080805190602001909291905050505056fea264697066735822122061b50dfcf142c9d5632e4ed08aa8245453dd9abe9a44bffc22acf36d688d5e4264736f6c63430007000033",
+        "linkReferences": {},
+        "from": "account{3}"
+      }
+    },
+    {
+      "timestamp": 1746357549976,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "created{1746357428731}",
+          "2"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746357417687}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{3}"
+      }
+    },
+    {
+      "timestamp": 1746357609606,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "created{1746357428731}",
+          "2"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746357417687}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{2}"
+      }
+    },
+    {
+      "timestamp": 1746357619981,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "exploitUnderflow",
+        "type": "function",
+        "to": "created{1746357428731}",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "from": "account{3}"
+      }
+    },
+    {
+      "timestamp": 1746357827464,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "contractName": "VulnerableToken",
+        "bytecode": "60806040527fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff60015534801561003457600080fd5b506001546000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610218806100896000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806318160ddd1461004657806327e235e314610064578063a9059cbb146100bc575b600080fd5b61004e610120565b6040518082815260200191505060405180910390f35b6100a66004803603602081101561007a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610126565b6040518082815260200191505060405180910390f35b610108600480360360408110156100d257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019092919050505061013e565b60405180821515815260200191505060405180910390f35b60015481565b60006020528060005260406000206000915090505481565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550600190509291505056fea2646970667358221220aaffc2c2f80eb58113f6cbbdba5fbdd0379087669afa02da1cbeae108901ec2a64736f6c63430007000033",
+        "linkReferences": {},
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1746357848502,
+      "record": {
+        "value": "0",
+        "inputs": "(address)",
+        "parameters": [
+          "created{1746357827464}"
+        ],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "contractName": "Attack",
+        "bytecode": "608060405234801561001057600080fd5b506040516102373803806102378339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101a3806100946000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806330c78fa81461003b5780635b57098a1461006f575b600080fd5b610043610079565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61007761009d565b005b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb3360026040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561012f57600080fd5b505af1158015610143573d6000803e3d6000fd5b505050506040513d602081101561015957600080fd5b81019080805190602001909291905050505056fea2646970667358221220ca33ac7e36742da92b938a21b2520be28d1e18436707207496611cce0b4de1ed64736f6c63430007000033",
+        "linkReferences": {},
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746357957389,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "created{1746357848502}",
+          "2"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746357827464}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1746357969212,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "exploitUnderflow",
+        "type": "function",
+        "to": "created{1746357848502}",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746358072720,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "contractName": "VulnerableToken",
+        "bytecode": "60806040527fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff60015534801561003457600080fd5b506001546000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610218806100896000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806318160ddd1461004657806327e235e314610064578063a9059cbb146100bc575b600080fd5b61004e610120565b6040518082815260200191505060405180910390f35b6100a66004803603602081101561007a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610126565b6040518082815260200191505060405180910390f35b610108600480360360408110156100d257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019092919050505061013e565b60405180821515815260200191505060405180910390f35b60015481565b60006020528060005260406000206000915090505481565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550600190509291505056fea2646970667358221220aaffc2c2f80eb58113f6cbbdba5fbdd0379087669afa02da1cbeae108901ec2a64736f6c63430007000033",
+        "linkReferences": {},
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746358083199,
+      "record": {
+        "value": "0",
+        "inputs": "(address)",
+        "parameters": [
+          "created{1746358072720}"
+        ],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "contractName": "Attack",
+        "bytecode": "608060405234801561001057600080fd5b506040516102373803806102378339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101a3806100946000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806330c78fa81461003b5780635b57098a1461006f575b600080fd5b610043610079565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61007761009d565b005b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb3360646040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561012f57600080fd5b505af1158015610143573d6000803e3d6000fd5b505050506040513d602081101561015957600080fd5b81019080805190602001909291905050505056fea264697066735822122065e66171094c57b569d938ebc51108260652235ded5d8c8c60b70c00aa64682864736f6c63430007000033",
+        "linkReferences": {},
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746358094175,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "created{1746358083199}",
+          "100"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746358072720}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{1}"
+      }
+    },
+    {
+      "timestamp": 1746358109505,
+      "record": {
+        "value": "0",
+        "inputs": "(address,uint256)",
+        "parameters": [
+          "created{1746358083199}",
+          "100"
+        ],
+        "name": "transfer",
+        "type": "function",
+        "to": "created{1746358072720}",
+        "abi": "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8",
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1746358115961,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "exploitUnderflow",
+        "type": "function",
+        "to": "created{1746358083199}",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1746358121274,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "exploitUnderflow",
+        "type": "function",
+        "to": "created{1746358083199}",
+        "abi": "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9",
+        "from": "account{1}"
+      }
+    }
+  ],
+  "abis": {
+    "0x28361cbd7211f544d282a4c62207e8e50171871f8e0f449b77cdca2817a2a8c8": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_value",
+            "type": "uint256"
+          }
+        ],
+        "name": "transfer",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "balances",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "totalSupply",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "0x0f3234897f92a9957c74f3f7febbd27646ab94de076024239355832ac45a17d9": [
+      {
+        "inputs": [],
+        "name": "exploitUnderflow",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_vulnerableTokenAddress",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [],
+        "name": "vulnerableToken",
+        "outputs": [
+          {
+            "internalType": "contract VulnerableToken",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ]
+  }
+}

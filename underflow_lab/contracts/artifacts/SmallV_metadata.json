@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.7.6+commit.7338295f"
+		"version": "0.7.0+commit.9e61f92b"
 	},
 	"language": "Solidity",
 	"output": {
@@ -21,9 +21,9 @@
 				"name": "balances",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -34,9 +34,9 @@
 				"name": "totalSupply",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -50,9 +50,9 @@
 						"type": "address"
 					},
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "_value",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"name": "transfer",
@@ -80,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/VulnerableToken.sol": "VulnerableToken"
+			"contracts/SmallVulnToken.sol": "SmallV"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -94,20 +94,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/VulnerableToken.sol": {
-<<<<<<<< HEAD:overflow_lab/contracts/artifacts/VulnerableToken_metadata.json
-			"keccak256": "0x9ed6b1841784dce2bec1334bc13523bab44f056b2e3a505f940e2c8732659d28",
+		"contracts/SmallVulnToken.sol": {
+			"keccak256": "0x9aa69ed1fceb1bfd59558dd45f148dd3a584ab249ea027a9b114b83855b5d228",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1eaa5059ad0b700648590a3362b050bba43551a531bd705bd39a5a39ea4f7121",
-				"dweb:/ipfs/QmVfyTw4KjYPpPJMxL1uN3RK4xfRUrMncM8kdHRvsHaanx"
-========
-			"keccak256": "0x18ab9489f54d47cc132d18094d032cb5c15697f081ba2df197d62210de313046",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://a2c6ce03b0bae76962298986ab1de95c382ed295df66f04b3d745b4d5cbf3415",
-				"dweb:/ipfs/Qmcox9wwj8VFsiAHqsn23AnMfETuWQCQZWKfUfr5bBENrC"
->>>>>>>> underflow-branch:underflow_lab/contracts/artifacts/VulnerableToken_metadata.json
+				"bzz-raw://f30b9530fd5c6a63c8540e49998f3e4b1158dd0f7d178d4ca4f24a87f600b5ef",
+				"dweb:/ipfs/QmZSZezyYCEJRWB6XzQzkbiq87bZ2zhfUgNaFacvPSdXdC"
 			]
 		}
 	},
