@@ -80,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/VulnerableToken.sol": "VulnerableToken"
+			"contracts/SafeToken.sol": "SafeToken"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -94,12 +94,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/VulnerableToken.sol": {
-			"keccak256": "0xf259adcf4205a6880279a8b7fd2149555eb169769152d57b0a0bab2709853297",
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9c53136fe161c12c77bdaf8bd069aeea0a4dc1172f778cca268a3498ce6c3249",
-				"dweb:/ipfs/QmQr6Uzwgx4GhfcHdkEt7HLqDTAPYzpceXxgJ2zRFxYXnV"
+				"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c",
+				"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR"
+			]
+		},
+		"contracts/SafeToken.sol": {
+			"keccak256": "0x2562ee4f704b06bb1ef23d2bcd2aeb34f36b9ec245a621b7744b96a312faef17",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1342c339685cf8cbc2f5a78c6e0ce2782b8120189a2f45d3de7550fbc3c2bb36",
+				"dweb:/ipfs/Qmd3x3opbheqTcHgc3JJ3NajDt15DiEE19zwxL7Ce4fy9e"
 			]
 		}
 	},

